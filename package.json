@@ -1,18 +1,11 @@
 {
-  "name": "caniretire",
-  "version": "1.0.0",
   "description": "Simple webapp that projects future expenses against starting assets to determine when you will run out of money!",
   "author": "miroman",
-  "license": "MIT",
+  "license": "SEE https://raw.githubusercontent.com/miroman9364/caniretire/main/LICENSE",
   "private": true,
   "homepage": "https://github.com/miroman9364/caniretire#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/miroman9364/caniretire.git"
-  },
-  "bugs": {
-    "url": "https://github.com/miroman9364/caniretire/issues"
-  },
+  "repository": "github:miroman9364/caniretire",
+  "bugs": "https://github.com/miroman9364/caniretire/issues",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
