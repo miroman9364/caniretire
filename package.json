@@ -1,0 +1,19 @@
+{
+  "name": "caniretire",
+  "version": "1.0.0",
+  "description": "App to determine if you have sufficient assets to cover your future expenses.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miroman9364/caniretire.git"
+  },
+  "author": "miroman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miroman9364/caniretire/issues"
+  },
+  "homepage": "https://github.com/miroman9364/caniretire#readme"
+}
