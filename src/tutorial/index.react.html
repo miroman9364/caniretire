@@ -1,0 +1,70 @@
+<!-- index.html -->
+<html>
+  <body>
+    <div id="app"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Babel script-->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
+      const app = document.getElementById('app');
+
+      function Header({ title }) {
+        console.log("title: \"" + title + "\"");
+        if (!title) {
+          return <h1>Develop. Preview. Ship. 🚀</h1>;
+        }
+
+        return <h1>{title}</h1>;
+      }
+
+      function SubHeading({ title }) {
+        return <h2>{String(title)}</h2>;
+      }
+
+      function LikeButton() {
+        const [likes, setLikes] = React.useState(0);
+        function handleClick() {
+          console.log("increment like count");
+          setLikes(likes + 1);
+        }
+
+        return <button onClick={handleClick}>Like ({likes})</button>;
+      }
+
+      function HomePage() {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        const nullValue = null;
+        const undefinedValue = undefined
+        const hello_world = "Hello World!";
+
+        return <div>
+          <Header title="React 💙" />
+          <Header />
+          <SubHeading title={hello_world} />
+          <SubHeading title="Next is default" />
+          <SubHeading />
+          <SubHeading title="Next is null" />
+          <SubHeading title={nullValue} />
+          <SubHeading title="Next is undefined" />
+          <SubHeading title={undefinedValue} />
+          <p>Welcome to the homepage!</p>
+          <ul>
+            {
+              names.map(
+                name =>
+                  <li key={name}>{name}</li>
+              )
+            }
+          </ul>
+
+          <LikeButton />
+        </div>;
+      }
+
+      ReactDOM.render(<HomePage />, app);
+    </script>
+  </body>
+</html>
